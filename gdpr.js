@@ -18,8 +18,8 @@ jQuery(window).load(function() {
                 implicit: true, //Accept cookies on scroll
                 statement: 'https://www.sursadevest.ro/politica-de-confidentialitate/', //Link to your cookie statement page
                 performance: [], //Cookies in the performance category.
-                analytics: ['_ga','_gid','_gat'], //Cookies in the analytics category.
-                marketing: [] //Cookies in the marketing category.
+                analytics: ['_ga','_gid','_gat','tk_ai'], //Cookies in the analytics category.
+                marketing: ['_clsk','_clck',''] //Cookies in the marketing category.
 });
             
             
