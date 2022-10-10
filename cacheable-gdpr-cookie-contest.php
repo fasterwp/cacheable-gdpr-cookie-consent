@@ -12,9 +12,9 @@
  * Domain Path:       /languages
  */
 
-function simplenet_gdpr_scripts() {
-    wp_enqueue_script('simplenet_gdpr_plugin','/wp-content/plugins/simplenet-gdpr/gdpr-plugin.js','','',true);
-    wp_enqueue_script('simplenet_gdpr','/wp-content/plugins/simplenet-gdpr/gdpr.js','','',true);
-    wp_enqueue_style('simplenet_gdpr_style','/wp-content/plugins/simplenet-gdpr/gdpr-style.css',false, '1.0', 'all');
+function fwp_gdpr_scripts() {
+    wp_enqueue_script('fwp_gdpr_plugin','/wp-content/plugins/cacheable-gdpr-cookie-contest/gdpr-plugin.js','','',true);
+    wp_enqueue_script('fwp_gdpr','/wp-content/plugins/cacheable-gdpr-cookie-contest/gdpr.js','','',true);
+    wp_enqueue_style('fwp_gdpr_style','/wp-content/plugins/cacheable-gdpr-cookie-contest/gdpr-style.css',false, '1.0', 'all');
 }
-add_action( 'wp_print_scripts', 'simplenet_gdpr_scripts' );
+add_action( 'wp_print_scripts', 'fwp_gdpr_scripts' );
