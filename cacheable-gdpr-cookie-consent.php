@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name:       Cacheable GDPR Cookie
- * Plugin URI:        https://github.com/fasterwp/cacheable-gdpr-cookie-contest
+ * Plugin Name:       Cacheable GDPR Cookie Consent
+ * Plugin URI:        https://github.com/fasterwp/cacheable-gdpr-cookie-consent
  * Description:       This is a functionality plugin to implementat required code for the GDPR cookie plugin
  * Version:           1.0.0
  * Author:            Simplenet Hosting
@@ -13,8 +13,8 @@
  */
 
 function fwp_gdpr_scripts() {
-    wp_enqueue_script('fwp_gdpr_plugin','/wp-content/plugins/cacheable-gdpr-cookie-contest/gdpr-plugin.js','','',true);
-    wp_enqueue_script('fwp_gdpr','/wp-content/plugins/cacheable-gdpr-cookie-contest/gdpr.js','','',true);
-    wp_enqueue_style('fwp_gdpr_style','/wp-content/plugins/cacheable-gdpr-cookie-contest/gdpr-style.css',false, '1.0', 'all');
+    wp_enqueue_script('fwp_gdpr_plugin','/wp-content/plugins/cacheable-gdpr-cookie-consent/gdpr-plugin.js','','',true);
+    wp_enqueue_script('fwp_gdpr','/wp-content/plugins/cacheable-gdpr-cookie-consent/gdpr.js','','',true);
+    wp_enqueue_style('fwp_gdpr_style','/wp-content/plugins/cacheable-gdpr-cookie-consent/gdpr-style.css',false, '1.0', 'all');
 }
 add_action( 'wp_print_scripts', 'fwp_gdpr_scripts' );
